@@ -38,6 +38,7 @@ class File():
 			f.close()
 		return File(self.path)
 
+# Everything below is meaningless, don't use it. Don't use filemanage at all
 def fw(path, content):
 	with open(path, "a+") as f:
 		f.write(content)
