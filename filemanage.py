@@ -23,13 +23,13 @@ class File():
 	def rewrite(self, content, encoding: str = "utf-8"):
 		"""Clears the file and writes to it"""
 		with open(self.path, "w+") as f:
-			f.write()
+			f.write(content)
 		return File(self.path)
 	
 	def write(self, content, encoding: str = "utf-8"):
 		"""Does not clear the file and writes to it"""
 		with open(self.path, "w+") as f:
-			f.write()
+			f.write(content)
 		return File(self.path)
 	
 	def create(self):
